@@ -47,7 +47,7 @@ describe('Live tests', function() {
     shoovWebdrivercss.after(done);
   });
 
-  it('should show the home page page',function(done) {
+  it('should show the home page',function(done) {
     client
       .url(baseUrl)
       .webdrivercss(testName, {
@@ -62,7 +62,7 @@ describe('Live tests', function() {
       .call(done);
   });
 
-  it('should show the about page page',function(done) {
+  it('should show the about page',function(done) {
     client
       .url(baseUrl + 'about')
       .webdrivercss(testName, {
