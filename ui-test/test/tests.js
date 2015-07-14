@@ -54,9 +54,18 @@ describe('Live tests', function() {
         name: 'homepage',
         exclude:
           [
-            '.event',
+            '.carousel-inner',
+            '.news-img',
+            '#at-stanford .item',
             '.timestamp',
             '.social-timestamp'
+          ],
+        remove:
+          [
+            '.news-text',
+            '#more-news ul',
+            '#tweet_text',
+            '.event',
           ]
       }, shoovWebdrivercss.processResults)
       .call(done);
